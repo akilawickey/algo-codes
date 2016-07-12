@@ -1,3 +1,9 @@
+#!/bin/python3
+
+#thi code is comitted by Amila Sampath for
+#for group code bank
+
+
 import random
 import sys
 import os
@@ -6,10 +12,10 @@ import os
                 #Basic output
 
 ########################################################
-#print("Hello World")
+print("Hello World")
 
-#name = "Derek"
-#print(name)
+name = "Derek"
+print(name)
 
 
 ########################################################
@@ -121,7 +127,9 @@ new_tuple = list(pi_tuple)
 
 new_list = tuple(new_tuple)
 
-len(tuple) min(tuple) max(tuple)
+len(tuple)
+min(tuple)
+max(tuple)
 
 ########################################################
 
@@ -159,19 +167,19 @@ print(super_villains.values())
 
 # if else elif == != > >= <= <
 
-#age = 21
+age = 21
 
-#if age > 16 :
-#    print('You are old enough to drive')
-#else:
-#    print('you are not enough to drive')
+if age > 16 :
+    print('You are old enough to drive')
+else:
+    print('you are not enough to drive')
 
-#if age >= 21 :
-#    print('tracktor')
-#elif age >= 16:
-#    print(" dive car")
-#else:
-#    print("not drive")
+if age >= 21 :
+    print('tracktor')
+elif age >= 16:
+    print(" dive car")
+else:
+    print("not drive")
 
 ########################################################
 
@@ -180,15 +188,15 @@ print(super_villains.values())
 ########################################################
 
 #and or not
-#age =21
-#if((age >= 1) and (age <= 18)):
-#    print("you get a birthday")
-#elif (age == 21) or (age >= 65):
-#    print(" you are mid age")
-#elif not(age ==30):
-#    print("yoy ded")
-#else:
-#    print("hello")
+age =21
+if((age >= 1) and (age <= 18)):
+    print("you get a birthday")
+elif (age == 21) or (age >= 65):
+    print(" you are mid age")
+elif not(age ==30):
+    print("yoy ded")
+else:
+    print("hello")
 
 ########################################################
 
@@ -203,25 +211,25 @@ print(super_villains.values())
 
 
 
-#for x in range(0,10):
-#    print(x, ' ', end="")
+for x in range(0,10):
+    print(x, ' ', end="")
 
-#print('\n')
+print('\n')
 
-#grocery_list = ['juice','Tomato','potatoes',
-#                'bananas']
+grocery_list = ['juice','Tomato','potatoes',
+                'bananas']
 
-#for y in grocery_list:
-#    print(y)
+for y in grocery_list:
+    print(y)
 
-#for x in [2,4,6,8,10]:
-#    print(x)
+for x in [2,4,6,8,10]:
+    print(x)
 
-#num_list = [[1,2,3],[10,20,30],[100,200,300]]
+num_list = [[1,2,3],[10,20,30],[100,200,300]]
 
-#for x in range(0,3):
-#    for y in range (0,3):
-#        print(num_list[x][y])
+for x in range(0,3):
+    for y in range (0,3):
+        print(num_list[x][y])
 
 
 
@@ -229,25 +237,24 @@ print(super_villains.values())
     # WHILE LOOP
 
 
-#rand_num = random.randrange(0,100)
+rand_num = random.randrange(0,100)
 
-#while(rand_num != 15):
-#    print(rand_num)
-#    rand_num = random.randrange(0,100)#
+while(rand_num != 15):
+    print(rand_num)
+    rand_num = random.randrange(0,100)#
 
-#i = 0;
+i = 0;
 
-#while (i <= 20):
-#    if(i%2 == 0 ):
-#        print (i)
-#    elif(i ==9):
-#        print (i)
-#        break
-#    else:
-#        i+=1 # i = i+1
-#        continue
-#    i +=1
-
+while (i <= 20):
+    if(i%2 == 0 ):
+        print (i)
+    elif(i ==9):
+        print (i)
+        break
+    else:
+        i+=1 # i = i+1
+        continue
+    i +=1
 
 
 ########################################################
@@ -257,18 +264,18 @@ print(super_villains.values())
 ########################################################
 
 
-#def addNumber(fNum,lNum):
-#    sumNum = fNum+lNum
-#    return  sumNum
+def addNumber(fNum,lNum):
+    sumNum = fNum+lNum
+    return  sumNum
 
-#print (addNumber(1,4))
+print (addNumber(1,4))
 
 
-#print ('What is your name')
+print ('What is your name')
 
-#name = sys.stdin.readline()
+name = sys.stdin.readline()
 
-#print ('Hello', name)
+print ('Hello', name)
 
 
 ########################################################
@@ -278,36 +285,36 @@ print(super_villains.values())
 ########################################################
 
 
-#long_string = "I'll catch you if you fall the floor"
+long_string = "I'll catch you if you fall the floor"
 
-#print(long_string[0:4])
+print(long_string[0:4])
 
-#print(long_string[-5:])
+print(long_string[-5:])
 
-#print(long_string[:-5])
+print(long_string[:-5])
 
-#print(long_string[:4] + " be there")
+print(long_string[:4] + " be there")
 
-#print("%c is my %s letter and my number %d number is %.5f ths" %
-#      ('X','favorite', 4,.14) )
+print("%c is my %s letter and my number %d number is %.5f ths" %
+      ('X','favorite', 4,.14) )
 
-#print(long_string.capitalize())
+print(long_string.capitalize())
 
-#print(long_string.find("floor"))
+print(long_string.find("floor"))
 
-#print(long_string.isalpha())
+print(long_string.isalpha())
 
-#print(long_string.isalnum())
+print(long_string.isalnum())
 
-#print(len(long_string))
+print(len(long_string))
 
-#print(long_string.replace("floor" , "Ground"))
+print(long_string.replace("floor" , "Ground"))
 
-#print(long_string.strip())
+print(long_string.strip())
 
-#quote_list = long_string.split(" ")
+quote_list = long_string.split(" ")
 
-#print(quote_list)
+print(quote_list)
 
 
 
@@ -319,25 +326,25 @@ print(super_villains.values())
 
 # writing file
 
-#test_file = open("text.txt", "wb")
+test_file = open("text.txt", "wb")
 
-#print(test_file.mode)
+print(test_file.mode)
 
-#print(test_file.name)
+print(test_file.name)
 
-#test_file.write(bytes("write me to the file\n", 'UTF-8'))
+test_file.write(bytes("write me to the file\n", 'UTF-8'))
 
-#test_file.close()
+test_file.close()
 
 #Reading files
 
-#test_file = open("text.txt", "r+")
+test_file = open("text.txt", "r+")
 
-#text_in_file =test_file.read()
+text_in_file =test_file.read()
 
-#print(text_in_file)
+print(text_in_file)
 
-#os.remove("text.txt")
+os.remove("text.txt")
 
 
 ########################################################
@@ -442,3 +449,5 @@ test_animals.get_type(spot)
 
 spot.multiple_sound(4)
 spot.multiple_sound()
+
+#
