@@ -1,0 +1,453 @@
+#!/bin/python3
+
+#thi code is comitted by Amila Sampath for
+#for group code bank
+
+
+import random
+import sys
+import os
+########################################################
+
+                #Basic output
+
+########################################################
+print("Hello World")
+
+name = "Derek"
+print(name)
+
+
+########################################################
+
+                #Variables & Operators
+
+########################################################
+
+# variables
+# Numbers Strings Lists Tuples Dictionaries
+
+
+# Arithmatic Operations
+# + - * / % ** //
+
+print("5+2 =",5+2)
+print("5-2 =",5-2)
+print("5*2 =",5*2)
+print("5/2 =",5/2)
+print("5%2 =",5%2)
+print("5**2 =",5**2)
+print("5//2 =",5//2)
+
+print("1+2-3*2=",1+2-3*2)
+print("(1+2-3)*2=",(1+2-3)*2)
+
+quote = "\"Always remember you are unique"
+
+multi_line_quote = ''' just
+like everyone
+else'''
+
+new_String1 = quote + multi_line_quote
+
+print("%s %s %s"%('I like the quite',quote, multi_line_quote))
+
+print('\n'*5)
+print("I dont like this", end="")
+print("newlint")
+
+name = 15
+
+
+
+########################################################
+
+                # Create List
+
+########################################################
+
+
+
+
+# this is about kind of arrays
+# create list of values
+
+grocery_list = ['juice','Tomato','potatoes',
+                'bananas']
+
+print('First Item', grocery_list[0])
+
+grocery_list[0]="Orange"
+
+print(grocery_list[0])
+
+print(grocery_list[1:3])
+
+other_events = ['wash car', 'pick up kids', 'cash check']
+
+to_do_list = [other_events,grocery_list]
+
+print(to_do_list)
+
+print(to_do_list[1][1])
+
+grocery_list.append('onions')
+
+print(to_do_list)
+
+grocery_list.insert(1,"pickle")
+
+grocery_list.remove("pickle")
+
+grocery_list.sort()
+
+grocery_list.reverse()
+print(grocery_list)
+del grocery_list[4]
+print(grocery_list)
+
+to_do_list2 = other_events+grocery_list
+
+print(len(to_do_list2))
+print(max(to_do_list2))
+print(min(to_do_list2))
+
+
+
+########################################################
+
+                #tooples
+
+########################################################
+        #basics
+
+pi_tuple = (3,1,4,1,5,9)
+
+new_tuple = list(pi_tuple)
+
+new_list = tuple(new_tuple)
+
+len(tuple)
+min(tuple)
+max(tuple)
+
+########################################################
+
+                #Dictionary
+
+########################################################
+
+super_villains = {'Fiddler' : 'Issac Bowin' ,
+                  'Captain Cold ' : 'Leonard Snart',
+                  'Weather Wizard' : 'Mark Mardon' ,
+                  'Mirror Master' : 'Sam Scudder' ,
+                  'Pied Piper' : 'Thomas Peter'}
+
+print(super_villains['Captain Cold '])
+
+del super_villains ['Fiddler']
+
+super_villains['Pied Piper'] = 'Hartley Rathaway'
+
+print(len(super_villains))
+
+print(super_villains.get("Pied Piper"))
+
+print(super_villains.keys())
+
+print(super_villains.values())
+
+
+
+########################################################
+
+                #if else elif
+
+########################################################
+
+# if else elif == != > >= <= <
+
+age = 21
+
+if age > 16 :
+    print('You are old enough to drive')
+else:
+    print('you are not enough to drive')
+
+if age >= 21 :
+    print('tracktor')
+elif age >= 16:
+    print(" dive car")
+else:
+    print("not drive")
+
+########################################################
+
+                #Logic operators
+
+########################################################
+
+#and or not
+age =21
+if((age >= 1) and (age <= 18)):
+    print("you get a birthday")
+elif (age == 21) or (age >= 65):
+    print(" you are mid age")
+elif not(age ==30):
+    print("yoy ded")
+else:
+    print("hello")
+
+########################################################
+
+                #Looping
+
+########################################################
+
+
+
+        # FOR LOOP
+
+
+
+
+for x in range(0,10):
+    print(x, ' ', end="")
+
+print('\n')
+
+grocery_list = ['juice','Tomato','potatoes',
+                'bananas']
+
+for y in grocery_list:
+    print(y)
+
+for x in [2,4,6,8,10]:
+    print(x)
+
+num_list = [[1,2,3],[10,20,30],[100,200,300]]
+
+for x in range(0,3):
+    for y in range (0,3):
+        print(num_list[x][y])
+
+
+
+
+    # WHILE LOOP
+
+
+rand_num = random.randrange(0,100)
+
+while(rand_num != 15):
+    print(rand_num)
+    rand_num = random.randrange(0,100)#
+
+i = 0;
+
+while (i <= 20):
+    if(i%2 == 0 ):
+        print (i)
+    elif(i ==9):
+        print (i)
+        break
+    else:
+        i+=1 # i = i+1
+        continue
+    i +=1
+
+
+########################################################
+
+                #Functions
+
+########################################################
+
+
+def addNumber(fNum,lNum):
+    sumNum = fNum+lNum
+    return  sumNum
+
+print (addNumber(1,4))
+
+
+print ('What is your name')
+
+name = sys.stdin.readline()
+
+print ('Hello', name)
+
+
+########################################################
+
+                #String
+
+########################################################
+
+
+long_string = "I'll catch you if you fall the floor"
+
+print(long_string[0:4])
+
+print(long_string[-5:])
+
+print(long_string[:-5])
+
+print(long_string[:4] + " be there")
+
+print("%c is my %s letter and my number %d number is %.5f ths" %
+      ('X','favorite', 4,.14) )
+
+print(long_string.capitalize())
+
+print(long_string.find("floor"))
+
+print(long_string.isalpha())
+
+print(long_string.isalnum())
+
+print(len(long_string))
+
+print(long_string.replace("floor" , "Ground"))
+
+print(long_string.strip())
+
+quote_list = long_string.split(" ")
+
+print(quote_list)
+
+
+
+########################################################
+
+                #File I/O
+
+########################################################
+
+# writing file
+
+test_file = open("text.txt", "wb")
+
+print(test_file.mode)
+
+print(test_file.name)
+
+test_file.write(bytes("write me to the file\n", 'UTF-8'))
+
+test_file.close()
+
+#Reading files
+
+test_file = open("text.txt", "r+")
+
+text_in_file =test_file.read()
+
+print(text_in_file)
+
+os.remove("text.txt")
+
+
+########################################################
+
+                #Objects
+
+########################################################
+
+
+class Animal:
+    __name = None
+    __height = 0
+    __weight = 0
+    __sound = 0
+
+    def __init__(self,name,height,weight,sound):
+        self.__name = name
+        self.__hight = height
+        self.__weight = weight
+        self.__sound = sound
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_name(self):
+        return  self.__name
+
+    def set_heigt(self, height):
+        self.__height = height
+
+    def get_heigt(self):
+        return self.__height
+
+    def set_sound(self, sound):
+        self.__sound = sound
+
+    def get_sound(self):
+        return self.__sound
+
+    def get_type(self):
+        print("Animal")
+
+    def toString(self):
+        return "{} is {} cm tall and {} kG and say {} ".format(self.__name,
+                                                               self.__hight,
+                                                               self.__weight,
+                                                               self.__sound)
+cat = Animal('Whiskers',33,10,'Meow')
+
+print(cat.toString())
+
+
+
+
+class Dog(Animal):
+    __owner = ""
+
+    def __init__(self,name,height,weight,sound,owner):
+        self.__owner = owner
+        super(Dog, self).__init__(name,height,weight,sound)
+
+    def set_owner(self,owner):
+        self.__owner = owner
+
+    def get_owner(self):
+        return self.__owner
+
+    def get_type(self):
+        print("Dog")
+
+
+
+    def toString(self):
+        return "{} is {} cm tall and {} kG and say {} and his owner is {}".format(self.__name,
+                                                                self.__hight,
+                                                               self.__weight,
+                                                               self.__sound,
+                                                               self.__owner)
+
+
+
+
+    def multiple_sound(self, how_maney=None):
+        if how_maney is None:
+            print(self.get_sound())
+        else:
+            print(self.get_sound()*how_maney)
+
+
+spot = Dog("spot", 53, 27,"Raff","takarama")
+print(spot.toString())
+
+
+class AnimalTesting:
+    def get_type(self,animal):
+        animal.get_type()
+
+test_animals =AnimalTesting()
+
+test_animals.get_type(cat)
+test_animals.get_type(spot)
+
+spot.multiple_sound(4)
+spot.multiple_sound()
+
+#
